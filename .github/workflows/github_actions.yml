@@ -1,0 +1,13 @@
+name: github-actions
+run-name: Terraform Pre Commit
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  terraform-pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
+    - uses: pre-commit/action@v3.0.0

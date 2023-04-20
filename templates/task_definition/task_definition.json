@@ -1,0 +1,30 @@
+[
+  {
+    "cpu": 256,
+    "essential": true,
+    "image": "${image_url}",
+    "memory": 512,
+    "name": "${container_name}",
+    "environment": [
+        {
+          "name": "RANDOM",
+          "value": "stuff"
+        }
+      ],
+    "portMappings": [
+      {
+        "containerPort": 8080,
+        "hostPort": 8080,
+        "protocol": "tcp"
+      }
+    ],
+    "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+            "awslogs-group": "${log_group_name}",
+            "awslogs-region": "${log_group_region}",
+            "awslogs-stream-prefix": "${log_group_prefix}"
+        }
+    }
+  }
+]
