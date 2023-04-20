@@ -42,7 +42,7 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.48.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.63.0 |
 | <a name="provider_template"></a> [template](#provider\_template) | 2.2.0 |
 
 ## Modules
@@ -78,15 +78,15 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_alarm_cpu_high_evaluation_periods"></a> [alarm\_cpu\_high\_evaluation\_periods](#input\_alarm\_cpu\_high\_evaluation\_periods) | Monitoring Variables | `number` | `1` | no |
-| <a name="input_alarm_cpu_high_period"></a> [alarm\_cpu\_high\_period](#input\_alarm\_cpu\_high\_period) | n/a | `number` | `60` | no |
-| <a name="input_alarm_cpu_high_statistic"></a> [alarm\_cpu\_high\_statistic](#input\_alarm\_cpu\_high\_statistic) | n/a | `string` | `"Maximum"` | no |
-| <a name="input_alarm_cpu_high_threshold"></a> [alarm\_cpu\_high\_threshold](#input\_alarm\_cpu\_high\_threshold) | n/a | `number` | `60` | no |
-| <a name="input_alarm_cpu_low_evaluation_periods"></a> [alarm\_cpu\_low\_evaluation\_periods](#input\_alarm\_cpu\_low\_evaluation\_periods) | n/a | `number` | `1` | no |
-| <a name="input_alarm_cpu_low_period"></a> [alarm\_cpu\_low\_period](#input\_alarm\_cpu\_low\_period) | n/a | `number` | `60` | no |
-| <a name="input_alarm_cpu_low_statistic"></a> [alarm\_cpu\_low\_statistic](#input\_alarm\_cpu\_low\_statistic) | n/a | `string` | `"Average"` | no |
-| <a name="input_alarm_cpu_low_threshold"></a> [alarm\_cpu\_low\_threshold](#input\_alarm\_cpu\_low\_threshold) | n/a | `number` | `30` | no |
-| <a name="input_alarm_metric_name"></a> [alarm\_metric\_name](#input\_alarm\_metric\_name) | n/a | `string` | `"CPUUtilization"` | no |
+| <a name="input_alarm_cpu_high_evaluation_periods"></a> [alarm\_cpu\_high\_evaluation\_periods](#input\_alarm\_cpu\_high\_evaluation\_periods) | CPU high evaluation period | `number` | `1` | no |
+| <a name="input_alarm_cpu_high_period"></a> [alarm\_cpu\_high\_period](#input\_alarm\_cpu\_high\_period) | CPU high period | `number` | `60` | no |
+| <a name="input_alarm_cpu_high_statistic"></a> [alarm\_cpu\_high\_statistic](#input\_alarm\_cpu\_high\_statistic) | CPU high statistic | `string` | `"Maximum"` | no |
+| <a name="input_alarm_cpu_high_threshold"></a> [alarm\_cpu\_high\_threshold](#input\_alarm\_cpu\_high\_threshold) | CPU high threshold | `number` | `60` | no |
+| <a name="input_alarm_cpu_low_evaluation_periods"></a> [alarm\_cpu\_low\_evaluation\_periods](#input\_alarm\_cpu\_low\_evaluation\_periods) | CPU low evaluation periods | `number` | `1` | no |
+| <a name="input_alarm_cpu_low_period"></a> [alarm\_cpu\_low\_period](#input\_alarm\_cpu\_low\_period) | CPU low period | `number` | `60` | no |
+| <a name="input_alarm_cpu_low_statistic"></a> [alarm\_cpu\_low\_statistic](#input\_alarm\_cpu\_low\_statistic) | CPU low statistic | `string` | `"Average"` | no |
+| <a name="input_alarm_cpu_low_threshold"></a> [alarm\_cpu\_low\_threshold](#input\_alarm\_cpu\_low\_threshold) | Alarm CPU low threshold | `number` | `30` | no |
+| <a name="input_alarm_metric_name"></a> [alarm\_metric\_name](#input\_alarm\_metric\_name) | Alarm Metric name | `string` | `"CPUUtilization"` | no |
 | <a name="input_cluster_name"></a> [cluster\_name](#input\_cluster\_name) | Name of the cluster ECS | `string` | n/a | yes |
 | <a name="input_container_cpu"></a> [container\_cpu](#input\_container\_cpu) | CPU units for the container | `number` | `256` | no |
 | <a name="input_container_memory"></a> [container\_memory](#input\_container\_memory) | Memory for the container | `number` | `512` | no |
@@ -95,8 +95,8 @@ No modules.
 | <a name="input_default_capacity_provider"></a> [default\_capacity\_provider](#input\_default\_capacity\_provider) | Default Capacity Provider to use | `string` | `"FARGATE"` | no |
 | <a name="input_ecr_repository_url"></a> [ecr\_repository\_url](#input\_ecr\_repository\_url) | URL of ECR repository | `string` | n/a | yes |
 | <a name="input_file_name_task_definition"></a> [file\_name\_task\_definition](#input\_file\_name\_task\_definition) | Name of the file with the task definition | `string` | n/a | yes |
-| <a name="input_namespace_name"></a> [namespace\_name](#input\_namespace\_name) | n/a | `string` | n/a | yes |
-| <a name="input_namespace_service_name"></a> [namespace\_service\_name](#input\_namespace\_service\_name) | n/a | `string` | n/a | yes |
+| <a name="input_namespace_name"></a> [namespace\_name](#input\_namespace\_name) | Namespace name | `string` | n/a | yes |
+| <a name="input_namespace_service_name"></a> [namespace\_service\_name](#input\_namespace\_service\_name) | Namespace service name | `string` | n/a | yes |
 | <a name="input_prefix"></a> [prefix](#input\_prefix) | Prefix for resources | `string` | n/a | yes |
 | <a name="input_project"></a> [project](#input\_project) | Name of the project | `string` | `"pipeline"` | no |
 | <a name="input_public_container"></a> [public\_container](#input\_public\_container) | Container will be public? | `bool` | n/a | yes |
